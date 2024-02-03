@@ -45,35 +45,39 @@ AOS.init();
 ///////////////////////////////////////
 // SWIPER
 ///////////////////////////////////////
-// TREATMENTS
+
+// TREATMENTS SLIDER
 const swiperTreatments = new Swiper(".swiper-treatments", {
 	autoplay: {
-		delay: 1000,
+		delay: 5000,
 		pauseOnMouseEnter: true,
 		disableOnInteraction: false,
 	},
 	loop: true,
-	// ON MOBILE (SMALLEST WIDTH)
 	slidesPerView: 2,
 	spaceBetween: 0,
-	speed: 6000,
+	speed: 500,
 	breakpoints: {
 		// when window width is >= 500px
 		500: {
 			slidesPerView: 2,
 		},
-		// when window width is >= 640px
-		// 640: {
-		// 	slidesPerView: 2,
-		// },
-		// when window width is >= 768px
 		768: {
 			slidesPerView: 3,
 		},
-		// when window width is >= 960px
 		960: {
 			slidesPerView: 4,
 		},
+		1281: {
+			slidesPerView: 5,
+		},
+		1600: {
+			slidesPerView: 6,
+		},
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
 	},
 });
 
@@ -89,35 +93,27 @@ const swiperFeaturedIn = new Swiper(".swiper-featured-in", {
 	spaceBetween: 60,
 	speed: 4000,
 	breakpoints: {
-		// when window width is >= 500px
 		500: {
 			slidesPerView: 3,
 		},
-		// when window width is >= 640px
 		640: {
 			slidesPerView: 4,
 		},
-		// when window width is >= 768px
 		768: {
 			slidesPerView: 5,
 		},
-		// when window width is >= 960px
 		960: {
 			slidesPerView: 6,
 		},
-		// when window width is >= 1024px
 		1024: {
 			slidesPerView: 7,
 		},
-		// when window width is >= 1280px
 		1280: {
 			slidesPerView: 8,
 		},
-		// when window width is >= 1920px
 		1920: {
 			slidesPerView: 9,
 		},
-		// when window width is >= 2048px
 		2048: {
 			slidesPerView: 12,
 		},
