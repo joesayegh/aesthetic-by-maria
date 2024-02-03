@@ -10,10 +10,8 @@ var tl = gsap.timeline({ paused: true });
 tl.to(menu, {
 	duration: 1,
 	autoAlpha: 1,
-	// THIS WAS 60
 	height: "100dvh",
-	// y: "-10rem",
-	y: "-100px",
+	y: "-82px",
 	ease: "expo.inOut",
 });
 tl.from(
