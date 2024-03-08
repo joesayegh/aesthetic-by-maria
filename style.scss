@@ -777,7 +777,7 @@ nav {
 
 	&-flex {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		padding-bottom: 3rem;
 		gap: 3rem;
 
@@ -790,14 +790,9 @@ nav {
 		&-left {
 			flex-basis: 50%;
 
-			h3 {
+			h2 {
 				// font-size: 3rem;
 				font-size: clamp(1.125rem, 0.5893rem + 2.6786vi, 3rem);
-				padding: 0.5rem 1rem;
-
-				@media screen and (min-width: 640px) {
-					padding: 0;
-				}
 			}
 		}
 
