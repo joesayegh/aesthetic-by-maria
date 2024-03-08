@@ -5,10 +5,13 @@ const burger = document.querySelector(".burger");
 const menu = document.querySelector("ul.main-menu");
 const links = menu.querySelectorAll("li");
 
+const navToggle = document.querySelector(".nav-toggle");
+const closeMenu = document.querySelectorAll(".main-menu li");
+
 var tl = gsap.timeline({ paused: true });
 
 tl.to(menu, {
-	duration: 1,
+	duration: 0.6,
 	autoAlpha: 1,
 	height: "100dvh",
 	y: "-82px",
@@ -17,7 +20,7 @@ tl.to(menu, {
 tl.from(
 	links,
 	{
-		duration: 1,
+		duration: 0.6,
 		autoAlpha: 0,
 		// y: 20,
 		stagger: 0.1,
@@ -30,8 +33,14 @@ tl.reverse();
 
 burger.addEventListener("click", () => {
 	tl.reversed(!tl.reversed());
-	const navToggle = document.querySelector(".nav-toggle");
 	navToggle.classList.toggle("active");
+});
+
+closeMenu.forEach((el) => {
+	el.addEventListener("click", (e) => {
+		tl.reversed(!tl.reversed());
+		navToggle.classList.toggle("active");
+	});
 });
 
 ///////////////////////////////////////
