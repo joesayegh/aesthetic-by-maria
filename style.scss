@@ -133,6 +133,8 @@ Utility Classes
 	--bg-alt: #f7f6f4;
 	--bg-alt-grad: rgba(247, 246, 244, 0);
 
+	--accent: rgb(156, 103, 79);
+
 	// SWIPER
 	// --swiper-theme-color: var(--bg) !important;
 	// --swiper-navigation-size: 1.5em !important;
@@ -165,6 +167,9 @@ Utility Classes
 }
 .text-white-alt {
 	color: var(--bg-alt);
+}
+.text-accent {
+	color: var(--accent);
 }
 
 //////////////////////////////////////////////
@@ -759,6 +764,45 @@ nav {
 					}
 				}
 			}
+		}
+	}
+}
+
+///////////////////////////////////////
+// ABOUT PAGE
+///////////////////////////////////////
+.about {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	&-flex {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 3rem;
+		gap: 3rem;
+
+		@media screen and (min-width: 640px) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		&-left {
+			flex-basis: 50%;
+
+			h3 {
+				// font-size: 3rem;
+				font-size: clamp(1.125rem, 0.5893rem + 2.6786vi, 3rem);
+				padding: 0.5rem 1rem;
+
+				@media screen and (min-width: 640px) {
+					padding: 0;
+				}
+			}
+		}
+
+		&-right {
+			flex-basis: 50%;
 		}
 	}
 }
