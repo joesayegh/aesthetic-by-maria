@@ -752,8 +752,14 @@ nav {
 				padding: 0;
 
 				li {
-					font-size: clamp(1rem, 0.9107rem + 0.4464vi, 1.3125rem);
+					// font-size: clamp(1rem, 0.9107rem + 0.4464vi, 1.3125rem);
+					font-size: clamp(0.8125rem, 0.7589rem + 0.2679vi, 1rem);
 					padding: 0.5rem 1rem;
+
+					// SEPARATE TREATMENT AND PRICE
+					display: flex;
+					justify-content: space-between;
+					gap: 1rem;
 
 					// &:nth-child(odd) {
 					// background-color: green;
