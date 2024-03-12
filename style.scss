@@ -826,7 +826,7 @@ nav {
 
 	&-flex {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		padding-bottom: 3rem;
 		gap: 3rem;
 
@@ -836,17 +836,23 @@ nav {
 			align-items: flex-start;
 		}
 
+		h2 {
+			// font-size: 3rem;
+			font-size: clamp(1.125rem, 0.5893rem + 2.6786vi, 3rem);
+		}
+
 		&-left {
 			flex-basis: 50%;
-
-			h2 {
-				// font-size: 3rem;
-				font-size: clamp(1.125rem, 0.5893rem + 2.6786vi, 3rem);
-			}
 		}
 
 		&-right {
 			flex-basis: 50%;
+		}
+
+		.order-swap {
+			@media screen and (min-width: 640px) {
+				order: 1;
+			}
 		}
 	}
 }
