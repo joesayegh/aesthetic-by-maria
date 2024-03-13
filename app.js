@@ -223,3 +223,15 @@ date.textContent = currentYear;
 // 		scaleX: 0,
 // 	});
 // });
+
+// DEMO
+
+gsap.to(".green", {
+	rotation: 900,
+	duration: 1,
+	scrollTrigger: {
+		trigger: ".box",
+		scrub: 2,
+		markers: true,
+	},
+});

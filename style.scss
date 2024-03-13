@@ -382,20 +382,16 @@ nav {
 }
 
 .wrapper {
-	// width: calc(100% - 5rem);
-	// height: 100%;
-	// margin: 0 auto;
-	// display: flex;
-	// align-items: center;
-
 	width: 100%;
+	max-width: 1440px;
 	// padding: 20px;
 	// height: 100px;
 	height: 82px;
-	// margin: 0 auto;
 	display: flex;
 	align-items: center;
 	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
 	background-color: var(--bg);
 }
 
@@ -867,4 +863,24 @@ nav {
 			}
 		}
 	}
+}
+
+// DEMO
+
+.box {
+	margin: 100px 0;
+	width: 75px;
+	height: 75px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #28a92b;
+	font-weight: 600;
+	color: #fff;
+}
+
+.green {
+	background-color: #28a92b;
 }
