@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Typography — Aesthetic by Maria</title>
+		<meta name="description" content="Get the best of advanced aesthetics with Maria. A fully qualified & experienced Harley Street expert" />
+
+		<!-- GOOGLE FONT -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+		<!-- SWIPER CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7.3.1/swiper-bundle.min.css" />
+		<!-- AOS CSS -->
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" /> -->
+		<!-- MAIN -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- FAVICON -->
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+		<link rel="manifest" href="favicon/site.webmanifest" />
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- SCRIPTS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@7.3.1/swiper-bundle.min.js" defer></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script> -->
+		<script src="app.js" defer></script>
+	</head>
+
+	<body>
+		<nav>
+			<div class="wrapper padding">
+				<a href="/" class="logo">
+					<img src="img/wordmark.svg" alt="Aesthetic by Maria Logo" />
+				</a>
+
+				<div class="burger">
+					<button type="button" class="nav-toggle">
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+				</div>
+
+				<ul class="main-menu">
+					<li><a href="/">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="pricelist.html">Pricelist</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="hero">
+			<div class="container">
+				<h1 class="visually-hidden">Typography</h1>
+				<picture>
+					<source srcset="https://placehold.co/1440x400/EEE/31343C?text=Typography&font=playfair-display" media="(min-width: 1024px)" />
+					<source srcset="https://placehold.co/1024x400/EEE/31343C?text=Typography&font=playfair-display" media="(min-width: 640px)" />
+					<img src="https://placehold.co/640x400/EEE/31343C?text=Typography&font=playfair-display" alt="Alt text" />
+				</picture>
+			</div>
+		</section>
+
+		<section id="services">
+			<div class="services container padding">
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+
+				<hr />
+
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed tenetur, repellendus praesentium laboriosam perspiciatis, a quas
+					excepturi eum laudantium dolore distinctio mollitia illo non, iure quod cum. Sapiente, alias.
+				</p>
+
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+				</ul>
+
+				<ol>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+				</ol>
+
+				<div class="services-flex">
+					<div class="services-flex-left">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iusto, quas neque eius porro provident quae reiciendis omnis doloremque
+						voluptatum cumque officiis esse? Beatae, doloribus ipsum. Magni, facilis quasi? Dignissimos!
+					</div>
+					<div class="about-flex-right">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus dolorum quasi dolor officia optio recusandae quis molestias
+						ex corporis, veritatis odit itaque consectetur eveniet quia unde rerum, fuga magnam?
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="contact">
+			<div class="bg-white-alt">
+				<div class="container padding">
+					<div class="contact">
+						<div class="contact-flex">
+							<div class="contact-flex-item">
+								<a href="/">
+									<img src="img/logo.svg" alt="Aesthetic By Maria Logo" />
+								</a>
+							</div>
+							<div class="contact-flex-item">
+								<h3>Opening Hours</h3>
+								<p id="monday">Monday 10am - 7pm</p>
+								<p id="tuesday">Tuesday 10am - 7pm</p>
+								<p id="wednesday">Wednesday 10am - 7pm</p>
+								<p id="thursday">Thursday 10am - 7pm</p>
+								<p id="friday">Friday 10am - 7pm</p>
+								<p id="saturday">Saturday 9am - 6pm</p>
+								<p id="sunday">Sunday - Closed</p>
+							</div>
+							<div class="contact-flex-item">
+								<h3>Contact Us</h3>
+								<p>
+									<a href="https://maps.app.goo.gl/LJxxri2JNNEPimLf6">
+										10 Adam and Eve Mews <br />
+										Kensington<br />
+										London W8 6UJ
+									</a>
+								</p>
+								<p><a href="tel:07494281058">+44 7494 281058</a></p>
+								<p><a href="mailto:hello@aesthetic-by-maria.co.uk">hello@aesthetic-by-maria.co.uk</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="copyright">
+						<div class="text-center">
+							<p>Copyright &copy; <span id="date"></span> Aesthetic by Maria</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="book">
+			<a class="btn btn-black" href="https://www.fresha.com/a/aesthetic-by-maria-london-10-adam-eve-mews-aderzrq0">BOOK</a>
+		</div>
+	</body>
+</html>

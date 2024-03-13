@@ -276,6 +276,9 @@ h6 {
 	line-height: 120%;
 }
 
+hr,
+ul,
+ol,
 p {
 	margin-bottom: 1rem;
 }
@@ -658,6 +661,15 @@ nav {
 
 			&:nth-of-type(2) p {
 				margin-bottom: 0;
+			}
+
+			&.opening-hours {
+				p {
+					display: flex;
+					justify-content: space-between;
+					max-width: 275px;
+					margin: 0 auto;
+				}
 			}
 		}
 	}
