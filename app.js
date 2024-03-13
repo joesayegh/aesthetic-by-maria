@@ -232,6 +232,6 @@ gsap.to(".green", {
 	scrollTrigger: {
 		trigger: ".box",
 		scrub: 2,
-		markers: true,
+		// markers: true,
 	},
 });
