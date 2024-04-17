@@ -235,3 +235,56 @@ gsap.to(".green", {
 		// markers: true,
 	},
 });
+
+///////////////////////////////////////
+// MODAL
+///////////////////////////////////////
+// OPEN THE MODAL
+function openModal() {
+	document.getElementById("teamModal").classList.toggle("show");
+	// PREVENT BODY SCROLLING WHEN MODAL IS OPEN
+	document.body.classList.add("lock");
+}
+
+// CLOSE THE MODAL
+function closeModal() {
+	document.getElementById("teamModal").classList.remove("show");
+	// ALLOW BODY SCROLLING AGAIN WHEN MODAL IS CLOSED
+	document.body.classList.remove("lock");
+}
+
+var teamModal = document.getElementById("teamModal");
+
+if (teamModal) {
+	// console.log('Modal detected');
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	// NEXT/PREVIOUS BUTTONS
+	function plusSlides(n) {
+		showSlides((slideIndex += n));
+	}
+
+	// CURRENT SLIDE
+	function currentSlide(n) {
+		showSlides((slideIndex = n));
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		if (n > slides.length) {
+			slideIndex = 1;
+		}
+		if (n < 1) {
+			slideIndex = slides.length;
+		}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex - 1].style.display = "block";
+	}
+} else {
+	// console.log('No Modal on this page');
+}

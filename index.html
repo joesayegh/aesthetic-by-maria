@@ -90,14 +90,14 @@
 			</div>
 		</section>
 
-		<section id="video">
+		<!-- <section id="video">
 			<div class="container">
-				<!-- <video autoplay="autoplay" muted="" loop="" class="video">
+				<video autoplay="autoplay" muted="" loop="" class="video">
 					<source
 						src="https://player.vimeo.com/external/364342581.hd.mp4?s=4c5899dc95da796e4915b05625512bea21f20016&amp;profile_id=174"
 						data-wf-ignore="true"
 					/>
-				</video> -->
+				</video>
 
 				<div class="youtube-container">
 					<iframe
@@ -110,7 +110,7 @@
 					</iframe>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section id="treatments">
 			<div class="treatments">
@@ -230,6 +230,203 @@
 					<!-- ARROWS -->
 					<!-- <div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div> -->
+				</div>
+			</div>
+		</section>
+
+		<section id="team">
+			<div class="team">
+				<div class="container padding">
+					<div class="section-intro">
+						<h2 class="text-center">OUR TEAM</h2>
+					</div>
+
+					<!-- TEAM -->
+					<div class="team__content">
+						<!-- ONE -->
+						<div class="team__content-item">
+							<div class="image">
+								<img src="img/team-maria-fernanda-monteiro.jpg" alt="Maria Fernanda Monteiro" loading="lazy" />
+							</div>
+							<div class="text">
+								<h4 class="name">Maria Fernanda Monteiro</h4>
+								<button class="team__modal-link" onclick="openModal();currentSlide(1)">
+									Read more <span class="visually-hidden">about Maria Fernanda Monteiro</span>
+								</button>
+							</div>
+						</div>
+						<!-- TWO -->
+						<div class="team__content-item">
+							<div class="image">
+								<img src="img/team-paul-tulley.jpg" alt="Paul Tulley" loading="lazy" />
+							</div>
+							<div class="text">
+								<h4 class="name">Dr. Paul Tulley</h4>
+								<button class="team__modal-link" onclick="openModal();currentSlide(2)">
+									Read more <span class="visually-hidden">about Paul Tulley</span>
+								</button>
+							</div>
+						</div>
+						<!-- THREE -->
+						<div class="team__content-item">
+							<div class="image">
+								<img src="img/team-camila-azzini.jpg" alt="Camila Azzini" loading="lazy" />
+							</div>
+							<div class="text">
+								<h4 class="name">Dr. Camila Azzini</h4>
+								<button class="team__modal-link" onclick="openModal();currentSlide(3)">
+									Read more <span class="visually-hidden">about Camila Azzini</span>
+								</button>
+							</div>
+						</div>
+						<!-- FOUR -->
+						<div class="team__content-item">
+							<div class="image">
+								<img src="img/team-eva-ferreira.jpg" alt="Eva Ferreira" loading="lazy" />
+							</div>
+							<div class="text">
+								<h4 class="name">Eva Ferreira</h4>
+								<button class="team__modal-link" onclick="openModal();currentSlide(4)">
+									Read more <span class="visually-hidden">about Eva Ferreira</span>
+								</button>
+							</div>
+						</div>
+						<!-- FIVE -->
+						<div class="team__content-item">
+							<div class="image">
+								<img src="https://placehold.co/720x927/EEE/31343C" alt="Name" loading="lazy" />
+							</div>
+							<div class="text">
+								<h4 class="name">Name</h4>
+								<button class="team__modal-link" onclick="openModal();currentSlide(5)">
+									Read more <span class="visually-hidden">about Name</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- THE MODAL / LIGHTBOX -->
+					<div id="teamModal" class="modal">
+						<div class="modal-content">
+							<div class="modal-content-inner">
+								<!-- ONE -->
+								<div class="mySlides">
+									<div id="maria-fernanda-monteiro">
+										<div class="image">
+											<img src="img/team-maria-fernanda-monteiro.jpg" alt="Maria Fernanda Monteiro" loading="lazy" />
+										</div>
+										<div class="text">
+											<h4 class="name">Maria Fernanda Monteiro</h4>
+											<p>
+												I’m Maria Fernanda. I am a passionate aesthetic practitioner with a deep understanding of injectables
+												treatments. My journey in the field of aesthetic began with a committment to enhancing natural beauty and
+												empowering my clients to feel confident and elegant with their skin. My passion is to develop results to
+												increase the quality of the skin and help my clients to gain back their self-esteem.
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- TWO -->
+								<div class="mySlides">
+									<div id="paul-tulley">
+										<div class="image">
+											<img src="img/team-paul-tulley.jpg" alt="Paul Tulley" loading="lazy" />
+										</div>
+										<div class="text">
+											<h4 class="name">Dr. Paul Tulley</h4>
+											<p>
+												Paul Tulley is a Consultant Plastic and Reconstructive Surgeon based in London and the South-East of the UK. He
+												specialises in all aspects of cosmetic surgery for female and male patients including facial rejuvenation
+												surgery, rhinoplasty, cosmetic breast surgery, abdominoplasty and body contouring.
+											</p>
+
+											<p>He also specialises in reconstructive surgery for facial palsy, skin cancer and the abdominal wall.</p>
+
+											<p>
+												He utilises the latest plastic surgery techniques and his aesthetic skill to produce exceptional, natural
+												results, in the safe environment of the highest quality hospitals in and around London.
+											</p>
+
+											<p>
+												Paul is a member of leading plastic surgery associations, including the British Association of Aesthetic Plastic
+												Surgeons (BAAPS) and the American Society of Plastic Surgeons (ASPS).
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- THREE -->
+								<div class="mySlides">
+									<div id="camila-azzini">
+										<div class="image">
+											<img src="img/team-camila-azzini.jpg" alt="Camila Azzini" loading="lazy" />
+										</div>
+										<div class="text">
+											<h4 class="name">Dr. Camila Azzini</h4>
+											<p>
+												I am Dr. Camila Azzini, dermatologist graduated more than 20 years ago from the Rio de Janeiro State University
+												with post-graduation in clinical – surgical dermatology and cosmiatrics.
+											</p>
+
+											<p>
+												I am passionate about the study of skin and hair and their relationship to holistic health. I am a full member
+												of the SBD (Brazilian Society of Dermatology), the AAD (American Academy of Dermatology), and the Brazilian
+												Society of Dermatologic Surgery.
+											</p>
+
+											<p>
+												Today I divide my time between studies, face-to-face appointments in London – UK, online appointments and share
+												my love for dermatology and life on my Youtube and Instagram channels.
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- FOUR -->
+								<div class="mySlides">
+									<div id="eva-ferreira">
+										<div class="image">
+											<img src="img/team-eva-ferreira.jpg" alt="Eva Ferreira" loading="lazy" />
+										</div>
+										<div class="text">
+											<h4 class="name">Eva Ferreira</h4>
+											<p>
+												As a dedicated aesthetician practitioner, Eva Ferreira is passionate about enhancing natural beauty and
+												restoring confidence through rejuvenating treatments. Specializing in Botox, lip enhancements, fillers, and
+												facial harmonization, Eva combines artistry with precision to achieve stunning, yet subtle results tailored to
+												each client's unique features. With a commitment to ongoing education and staying abreast of the latest
+												techniques, Eva ensures that clients receive the highest quality care and achieve their aesthetic goals with
+												confidence.
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- FIVE -->
+								<div class="mySlides">
+									<div id="no-name">
+										<div class="image">
+											<img src="https://placehold.co/720x927/EEE/31343C" alt="Name" loading="lazy" />
+										</div>
+										<div class="text">
+											<h4 class="name">Name</h4>
+											<p>
+												Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nihil corporis architecto perferendis quos
+												voluptatem itaque deleniti animi odit repellat quaerat, fugiat aperiam error, debitis tenetur ipsum, iste eius
+												non!
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- NEXT/PREVIOUS BUTTONS -->
+								<div class="navigation">
+									<button class="prev" onclick="plusSlides(-1)">Back</button>
+									<button class="next" onclick="plusSlides(1)">Next</button>
+								</div>
+
+								<!-- CLOSE BUTTON -->
+								<button class="close cursor" onclick="closeModal()">Close</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
