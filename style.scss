@@ -1052,10 +1052,9 @@ nav {
 	cursor: pointer;
 	color: var(--black);
 	position: absolute;
-	// top: 0;
-	// right: 0;
 	top: 25px;
-	right: 30px;
+	right: 0;
+	@extend .padding;
 	z-index: 100;
 	border: none;
 	background: none;
