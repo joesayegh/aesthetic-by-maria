@@ -71,6 +71,12 @@ h6 {
 	isolation: isolate;
 }
 
+// DISABLE DOUBLE TAP TO ZOOM ON TOUCH SCREENS. INTERNET EXPLORER INCLUDED.
+* {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
 /* =================================================================
 Utility Classes
 ================================================================= */
