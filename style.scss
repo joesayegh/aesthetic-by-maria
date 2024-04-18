@@ -995,12 +995,12 @@ nav {
 #teamModal {
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transition: 0.6s;
-	transition: 0.6s;
 
 	&.show {
 		opacity: 1;
 		visibility: visible;
+		-webkit-transition: 0.6s;
+		transition: 0.6s;
 		// HIGHEST Z-INDEX
 		z-index: 100;
 	}
