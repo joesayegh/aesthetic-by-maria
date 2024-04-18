@@ -344,7 +344,9 @@ a {
 	}
 }
 
+///////////////////////////////////////
 // HEADER
+///////////////////////////////////////
 .logo {
 	width: 100%;
 	max-width: 270px;
@@ -451,6 +453,23 @@ nav {
 		&:nth-child(2) {
 			margin-top: -1px;
 			transform: rotate(-45deg);
+		}
+	}
+}
+
+///////////////////////////////////////
+// HERO
+///////////////////////////////////////
+.hero {
+	img {
+		aspect-ratio: 640/768;
+
+		@media screen and (min-width: 640px) {
+			aspect-ratio: 1024/768;
+		}
+
+		@media screen and (min-width: 1024px) {
+			aspect-ratio: 1440/768;
 		}
 	}
 }
