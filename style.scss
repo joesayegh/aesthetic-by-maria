@@ -574,53 +574,59 @@ nav {
 
 		// Sadie
 
-		&.effect-sadie figcaption::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			// background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
-			background: linear-gradient(to bottom, var(--bg-grad) 0%, var(--text-grad) 75%);
-			content: "";
-			opacity: 0;
-			transform: translate3d(0, 50%, 0);
-		}
+		&.effect-sadie {
+			img {
+				aspect-ratio: 2/3;
+			}
 
-		&.effect-sadie h3 {
-			position: absolute;
-			top: 50%;
-			left: 0;
-			width: 100%;
-			// color: var(--white);
-			text-shadow: 2px 2px 1px #000;
-			transition: transform 0.35s, color 0.35s;
-			transform: translate3d(0, -50%, 0);
-		}
+			figcaption::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				// background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+				background: linear-gradient(to bottom, var(--bg-grad) 0%, var(--text-grad) 75%);
+				content: "";
+				opacity: 0;
+				transform: translate3d(0, 50%, 0);
+			}
 
-		&.effect-sadie figcaption::before,
-		&.effect-sadie p {
-			transition: opacity 0.35s, transform 0.35s;
-		}
+			p {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding: 2em;
+				width: 100%;
+				opacity: 0;
+				transform: translate3d(0, 10px, 0);
+			}
 
-		&.effect-sadie p {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			padding: 2em;
-			width: 100%;
-			opacity: 0;
-			transform: translate3d(0, 10px, 0);
-		}
+			figcaption::before,
+			p {
+				transition: opacity 0.35s, transform 0.35s;
+			}
 
-		&.effect-sadie:hover h3 {
-			transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
-		}
+			h3 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				// color: var(--white);
+				text-shadow: 2px 2px 1px #000;
+				transition: transform 0.35s, color 0.35s;
+				transform: translate3d(0, -50%, 0);
+			}
 
-		&.effect-sadie:hover figcaption::before,
-		&.effect-sadie:hover p {
-			opacity: 1;
-			transform: translate3d(0, 0, 0);
+			&:hover h3 {
+				transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+			}
+
+			&:hover figcaption::before,
+			&:hover p {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+			}
 		}
 	}
 }
