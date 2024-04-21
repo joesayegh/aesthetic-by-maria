@@ -34,12 +34,14 @@ tl.reverse();
 burger.addEventListener("click", () => {
 	tl.reversed(!tl.reversed());
 	navToggle.classList.toggle("active");
+	document.body.classList.toggle("lock");
 });
 
 closeMenu.forEach((el) => {
 	el.addEventListener("click", (e) => {
 		tl.reversed(!tl.reversed());
 		navToggle.classList.toggle("active");
+		document.body.classList.toggle("lock");
 	});
 });
 
