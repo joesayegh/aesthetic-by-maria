@@ -123,6 +123,45 @@ const swiperFeaturedIn = new Swiper(".swiper-featured-in", {
 	},
 });
 
+// IN PARTNERSHIP WITH
+const swiperPartners = new Swiper(".swiper-partners", {
+	loop: true,
+	autoplay: {
+		delay: 1,
+		disableOnInteraction: false,
+	},
+	// ON MOBILE (SMALLEST WIDTH)
+	slidesPerView: 2,
+	spaceBetween: 60,
+	speed: 4000,
+	breakpoints: {
+		500: {
+			slidesPerView: 3,
+		},
+		640: {
+			slidesPerView: 4,
+		},
+		768: {
+			slidesPerView: 5,
+		},
+		1024: {
+			slidesPerView: 6,
+		},
+		1280: {
+			slidesPerView: 7,
+		},
+		1920: {
+			slidesPerView: 8,
+		},
+		2048: {
+			slidesPerView: 9,
+		},
+		// 2048: {
+		// 	slidesPerView: 10,
+		// },
+	},
+});
+
 //////////////////////////////////////
 // MAKE THE CURRENT DAY BOLD
 //////////////////////////////////////

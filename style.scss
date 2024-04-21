@@ -640,20 +640,36 @@ nav {
 
 ///////////////////////////////////////
 // FEATURED IN - SWIPER
+// IN PARTNERSHIP WITH - SWIPER
 ///////////////////////////////////////
-.featured-in {
+.featured-in,
+.partners {
 	&-wrapper {
 		padding: 80px 0;
 
-		.swiper-featured-in {
+		.swiper-featured-in,
+		.swiper-partners {
 			margin-top: 4rem;
 		}
 	}
 }
 
-.swiper-featured-in > .swiper-wrapper {
+.swiper-featured-in > .swiper-wrapper,
+.swiper-partners > .swiper-wrapper {
 	transition-timing-function: linear;
 	align-items: center;
+}
+
+// FILTER COLOR - USED TO TURN SVG'S WHITE
+// USE THIS FOR CONVERTING THE COLOR TO A FILTER VALUE - https://codepen.io/sosuke/pen/Pjoqqp
+// IF AN IMAGE ISN'T BLACK, ADDING brightness(0) saturate(100%) TO THE BEGINNING OF THE LIST OF FILTERS WILL FIRST TURN IT 100% BLACK, WHICH ENABLES THE OTHER FILTERS TO CHANGE IT TO THE CORRECT COLOR
+.filter-color {
+	filter: brightness(0) saturate(100%);
+	// filter: brightness(0) saturate(100%) invert(10%) sepia(5%) saturate(5140%) hue-rotate(193deg) brightness(95%) contrast(86%);
+
+	// @media (prefers-color-scheme: dark) {
+	// 	filter: brightness(0) saturate(100%) invert(34%) sepia(79%) saturate(5445%) hue-rotate(12deg) brightness(95%) contrast(80%);
+	// }
 }
 
 //////////////////////////////////////////////
