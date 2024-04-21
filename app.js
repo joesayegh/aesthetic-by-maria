@@ -52,14 +52,14 @@ closeMenu.forEach((el) => {
 // TREATMENTS SLIDER
 const swiperTreatments = new Swiper(".swiper-treatments", {
 	autoplay: {
-		delay: 5000,
+		delay: 2000,
 		pauseOnMouseEnter: true,
 		disableOnInteraction: false,
 	},
 	loop: true,
 	slidesPerView: 2,
 	spaceBetween: 0,
-	speed: 500,
+	speed: 800,
 	breakpoints: {
 		// when window width is >= 500px
 		500: {
