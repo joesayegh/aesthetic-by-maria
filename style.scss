@@ -989,7 +989,7 @@ nav {
 
 		// .team__content-item
 		&-item {
-			padding-bottom: 4rem;
+			padding-bottom: 2rem;
 			flex-basis: calc(100% / 2 - 1rem);
 
 			@media screen and (min-width: 768px) {
@@ -1024,13 +1024,13 @@ nav {
 		cursor: pointer;
 		padding: 0;
 		margin: 0;
-		font-weight: bold;
+		// font-weight: bold;
 		text-decoration: underline;
 		text-underline-offset: 3px;
 		font-size: 16px;
 		font-size: 1rem;
 		line-height: 1.4;
-		margin: 15px 0 0 0;
+		// margin: 15px 0 0 0;
 
 		&:hover,
 		&:focus {
