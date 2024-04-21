@@ -78,6 +78,18 @@ h6 {
 }
 
 /* =================================================================
+Fonts
+================================================================= */
+
+@font-face {
+	font-family: "MinervaModern";
+	src: url("/font/MinervaModern-Regular.woff2") format("woff2"), url("/font/MinervaModern-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* =================================================================
 Utility Classes
 ================================================================= */
 
@@ -284,6 +296,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: "MinervaModern";
 	font-weight: 700;
 	margin-bottom: 1rem;
 	line-height: 120%;
@@ -485,8 +498,16 @@ nav {
 // INTRO
 ///////////////////////////////////////
 .intro {
-	padding-top: 2rem;
+	padding-top: 4rem;
 	padding-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	max-width: 1440px;
+	margin: auto;
+
+	@media screen and (min-width: 1024px) {
+		justify-content: flex-end;
+	}
 }
 
 ///////////////////////////////////////
@@ -650,6 +671,10 @@ nav {
 		.swiper-featured-in,
 		.swiper-partners {
 			margin-top: 4rem;
+		}
+
+		img {
+			aspect-ratio: 2 / 1;
 		}
 	}
 }

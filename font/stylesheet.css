@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MinervaModern';
+    src: url('MinervaModern-Regular.woff2') format('woff2'),
+        url('MinervaModern-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
