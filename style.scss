@@ -89,6 +89,8 @@ Fonts
 	font-display: swap;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 /* =================================================================
 Utility Classes
 ================================================================= */
@@ -245,6 +247,10 @@ body {
 	color: var(--text);
 	background-color: var(--bg);
 	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+	font-variation-settings: "slnt" 0;
 	font-size: 16px;
 	font-size: 1rem;
 	// font-size: clamp(1.13rem, calc(0.96rem + 0.64vw), 1.38rem);
