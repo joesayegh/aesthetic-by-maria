@@ -1,49 +1,44 @@
 ///////////////////////////////////////
 // NAV
 ///////////////////////////////////////
-const burger = document.querySelector(".burger");
-const menu = document.querySelector("ul.main-menu");
-const links = menu.querySelectorAll("li");
+var navToggle = document.querySelector(".nav-toggle");
+var navIcon = document.querySelector(".navicon");
+var primaryNavWrapper = document.querySelector(".primary-nav-wrapper");
 
-const navToggle = document.querySelector(".nav-toggle");
-const closeMenu = document.querySelectorAll(".main-menu li");
+navToggle.addEventListener("click", function () {
+	this.classList.toggle("active");
+	navIcon.classList.toggle("fixed");
+	primaryNavWrapper.classList.toggle("open");
 
-var tl = gsap.timeline({ paused: true });
-
-tl.to(menu, {
-	duration: 0.6,
-	autoAlpha: 1,
-	height: "100dvh",
-	y: "-82px",
-	ease: "expo.inOut",
-});
-tl.from(
-	links,
-	{
-		duration: 0.6,
-		autoAlpha: 0,
-		// y: 20,
-		stagger: 0.1,
-		ease: "expo.inOut",
-	},
-	"-=0.5"
-);
-
-tl.reverse();
-
-burger.addEventListener("click", () => {
-	tl.reversed(!tl.reversed());
-	navToggle.classList.toggle("active");
-	document.body.classList.toggle("lock");
+	var currentStatus = this.getAttribute("aria-expanded");
+	if (currentStatus == "true") {
+		// it's currently open, now closed
+		this.setAttribute("aria-expanded", "false");
+	} else {
+		// it's currently closed, now open
+		this.setAttribute("aria-expanded", "true");
+	}
 });
 
-closeMenu.forEach((el) => {
-	el.addEventListener("click", (e) => {
-		tl.reversed(!tl.reversed());
+var primaryNavLinks = document.querySelectorAll(".primary-nav-wrapper li a");
+
+for (var i = 0; i < primaryNavLinks.length; i++) {
+	primaryNavLinks[i].addEventListener("click", function () {
+		// console.log('clicked');
 		navToggle.classList.toggle("active");
-		document.body.classList.toggle("lock");
+		navIcon.classList.toggle("fixed");
+		primaryNavWrapper.classList.toggle("open");
+
+		var currentStatus = this.getAttribute("aria-expanded");
+		if (currentStatus == "true") {
+			// it's currently open, now closed
+			this.setAttribute("aria-expanded", "false");
+		} else {
+			// it's currently closed, now open
+			this.setAttribute("aria-expanded", "true");
+		}
 	});
-});
+}
 
 ///////////////////////////////////////
 // SWIPER
