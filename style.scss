@@ -1350,7 +1350,11 @@ button.nav-toggle {
 			height: 100%;
 			object-fit: cover;
 			// NEW
-			max-height: 640px;
+			max-height: 540px;
+
+			@media screen and (min-width: 800px) {
+				max-height: 640px;
+			}
 		}
 
 		// TEXT
