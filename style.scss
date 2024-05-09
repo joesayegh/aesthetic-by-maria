@@ -440,8 +440,6 @@ a {
 
 				@media screen and (min-width: 900px) {
 					display: inline-block;
-					margin: 0;
-					padding: 0;
 				}
 
 				li {
@@ -595,15 +593,15 @@ button.nav-toggle {
 ///////////////////////////////////////
 .hero {
 	img {
-		aspect-ratio: 640/768;
+		aspect-ratio: 1920/1080;
 
-		@media screen and (min-width: 640px) {
-			aspect-ratio: 1024/768;
-		}
+		// @media screen and (min-width: 640px) {
+		// 	aspect-ratio: 1024/768;
+		// }
 
-		@media screen and (min-width: 1024px) {
-			aspect-ratio: 1440/768;
-		}
+		// @media screen and (min-width: 1024px) {
+		// 	aspect-ratio: 1440/768;
+		// }
 	}
 }
 
