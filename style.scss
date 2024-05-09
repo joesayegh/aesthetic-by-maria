@@ -385,11 +385,16 @@ a {
 		text-transform: uppercase;
 
 		// .header-nav-wrapper .logo
-		.logo {
-			width: 200px;
-			height: 46px;
+		.logo img {
+			width: 220px;
+			height: 14px;
 			position: relative;
 			z-index: 999;
+
+			@media screen and (min-width: 640px) {
+				width: 300px;
+				height: 19px;
+			}
 		}
 
 		// .header-nav-wrapper .primary-nav-wrapper
