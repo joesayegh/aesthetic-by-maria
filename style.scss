@@ -656,7 +656,7 @@ button.nav-toggle {
 .treatments {
 	padding-top: 20px;
 
-	figure {
+	.effect-sadie {
 		position: relative;
 		float: left;
 		overflow: hidden;
@@ -686,7 +686,7 @@ button.nav-toggle {
 		// 	opacity: 0.8;
 		// }
 
-		figcaption {
+		.text-wrapper {
 			padding: 2em;
 			color: var(--bg);
 			text-transform: uppercase;
@@ -699,8 +699,8 @@ button.nav-toggle {
 			}
 		}
 
-		figcaption,
-		figcaption > a {
+		.text-wrapper,
+		.text-wrapper > a {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -710,7 +710,7 @@ button.nav-toggle {
 
 		// Anchor will cover the whole item by default
 		// For some effects it will show as a button
-		figcaption > a {
+		.text-wrapper > a {
 			z-index: 1000;
 			text-indent: 200%;
 			white-space: nowrap;
@@ -727,7 +727,7 @@ button.nav-toggle {
 				aspect-ratio: 2/3;
 			}
 
-			figcaption::before {
+			.text-wrapper::before {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -750,7 +750,7 @@ button.nav-toggle {
 				transform: translate3d(0, 10px, 0);
 			}
 
-			figcaption::before,
+			.text-wrapper::before,
 			p {
 				transition: opacity 0.35s, transform 0.35s;
 			}
@@ -770,7 +770,7 @@ button.nav-toggle {
 				transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
 			}
 
-			&:hover figcaption::before,
+			&:hover .text-wrapper::before,
 			&:hover p {
 				opacity: 1;
 				transform: translate3d(0, 0, 0);
