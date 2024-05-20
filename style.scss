@@ -882,9 +882,15 @@ button.nav-toggle {
 }
 
 .copyright {
-	padding: 2rem 0 4rem;
-	font-size: 11px;
+	padding: 2rem 0 5rem;
+	font-size: 0.85rem;
 	text-transform: uppercase;
+	font-family: "MinervaModern";
+	font-weight: 600;
+
+	@media screen and (min-width: 960px) {
+		padding: 2rem 0 4rem;
+	}
 }
 
 ///////////////////////////////////////
