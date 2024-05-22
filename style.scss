@@ -276,18 +276,18 @@ body {
 	padding-right: 1rem;
 
 	@media screen and (min-width: 768px) {
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 
 	@media screen and (min-width: 1024px) {
 		padding-left: 2rem;
-		padding-right: 3rem;
+		padding-right: 2rem;
 	}
 
 	@media screen and (min-width: 1366px) {
-		padding-left: 4rem;
-		padding-right: 4rem;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
 	}
 }
 
@@ -1419,4 +1419,18 @@ button.nav-toggle {
 			}
 		}
 	}
+}
+
+//////////////////////////////////
+// SITEMAP
+//////////////////////////////////
+
+ul.sitemap {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding-bottom: 4rem;
+	list-style: none;
+	gap: 1rem;
+	justify-content: center;
 }
