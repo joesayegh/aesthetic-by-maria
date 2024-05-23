@@ -1058,11 +1058,7 @@ button.nav-toggle {
 // SERVICES PAGE
 // TREATMENTS PAGE
 ///////////////////////////////////////
-.services,
-.treatments {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-
+.services {
 	&-flex {
 		display: flex;
 		flex-direction: column;
