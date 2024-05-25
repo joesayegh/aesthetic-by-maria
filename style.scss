@@ -162,6 +162,13 @@ Utility Classes
 
 	--accent: rgb(156, 103, 79);
 
+	// DARK MODE COLORS
+	@media (prefers-color-scheme: dark) {
+		--text: #fff;
+		--bg: #151515;
+		--bg-alt: #000;
+	}
+
 	// SWIPER
 	// --swiper-theme-color: var(--bg) !important;
 	// --swiper-navigation-size: 1.5em !important;
@@ -187,10 +194,10 @@ Utility Classes
 
 // TEXT COLOURS
 .text-white {
-	color: var(--white);
+	color: var(--bg);
 }
 .text-black {
-	color: var(--black);
+	color: var(--text);
 }
 .text-white-alt {
 	color: var(--bg-alt);
@@ -392,15 +399,18 @@ a {
 		text-transform: uppercase;
 
 		// .header-nav-wrapper .logo
-		.logo img {
-			width: 220px;
-			height: 14px;
-			position: relative;
-			z-index: 999;
+		.logo {
+			img,
+			svg {
+				width: 220px;
+				height: 14px;
+				position: relative;
+				z-index: 999;
 
-			@media screen and (min-width: 640px) {
-				width: 300px;
-				height: 19px;
+				@media screen and (min-width: 640px) {
+					width: 300px;
+					height: 19px;
+				}
 			}
 		}
 
@@ -688,7 +698,7 @@ button.nav-toggle {
 
 		.text-wrapper {
 			padding: 2em;
-			color: var(--bg);
+			color: #fff;
 			text-transform: uppercase;
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
@@ -810,11 +820,10 @@ button.nav-toggle {
 // IF AN IMAGE ISN'T BLACK, ADDING brightness(0) saturate(100%) TO THE BEGINNING OF THE LIST OF FILTERS WILL FIRST TURN IT 100% BLACK, WHICH ENABLES THE OTHER FILTERS TO CHANGE IT TO THE CORRECT COLOR
 .filter-color {
 	filter: brightness(0) saturate(100%);
-	// filter: brightness(0) saturate(100%) invert(10%) sepia(5%) saturate(5140%) hue-rotate(193deg) brightness(95%) contrast(86%);
 
-	// @media (prefers-color-scheme: dark) {
-	// 	filter: brightness(0) saturate(100%) invert(34%) sepia(79%) saturate(5445%) hue-rotate(12deg) brightness(95%) contrast(80%);
-	// }
+	@media (prefers-color-scheme: dark) {
+		filter: brightness(0) saturate(100%) invert(1);
+	}
 }
 
 //////////////////////////////////////////////
@@ -848,7 +857,8 @@ button.nav-toggle {
 			}
 
 			&:first-of-type {
-				img {
+				img,
+				svg {
 					max-width: 200px;
 					margin: 0 auto;
 				}
@@ -872,7 +882,8 @@ button.nav-toggle {
 				justify-content: center;
 				align-items: center;
 
-				img {
+				img,
+				svg {
 					max-width: 1.25rem;
 					margin-right: 0.5rem;
 				}
