@@ -43,27 +43,74 @@ for (var i = 0; i < primaryNavLinks.length; i++) {
 ///////////////////////////////////////////
 // MAKE SVG IMAGES INLINE TO TOGGLE CLASS
 ///////////////////////////////////////////
+// const convertImages = (query, callback) => {
+// 	const images = document.querySelectorAll(query);
+
+// 	images.forEach((image) => {
+// 		fetch(image.src)
+// 			.then((res) => res.text())
+// 			.then((data) => {
+// 				const parser = new DOMParser();
+// 				const svg = parser.parseFromString(data, "image/svg+xml").querySelector("svg");
+
+// 				if (image.id) svg.id = image.id;
+// 				if (image.className) svg.classList = image.classList;
+
+// 				image.parentNode.replaceChild(svg, image);
+// 			})
+// 			.then(callback)
+// 			.catch((error) => console.error(error));
+// 	});
+// };
+
+// convertImages("img");
+
 const convertImages = (query, callback) => {
 	const images = document.querySelectorAll(query);
+	let processedCount = 0;
 
 	images.forEach((image) => {
 		fetch(image.src)
 			.then((res) => res.text())
 			.then((data) => {
 				const parser = new DOMParser();
-				const svg = parser.parseFromString(data, "image/svg+xml").querySelector("svg");
+				const svgDoc = parser.parseFromString(data, "image/svg+xml");
+				const svg = svgDoc.querySelector("svg");
 
+				// IF NOT AN SVG
+				// if (!svg) {
+				// 	throw new Error("Invalid SVG content");
+				// }
+
+				// Transfer ID and className
 				if (image.id) svg.id = image.id;
-				if (image.className) svg.classList = image.classList;
+				if (image.className) svg.setAttribute("class", image.className);
 
-				image.parentNode.replaceChild(svg, image);
+				// Replace image with SVG
+				if (image.parentNode && svg) {
+					image.parentNode.replaceChild(svg, image);
+				}
 			})
-			.then(callback)
-			.catch((error) => console.error(error));
+			.then(() => {
+				processedCount++;
+				if (processedCount === images.length && typeof callback === "function") {
+					callback();
+				}
+			})
+			.catch((error) => {
+				console.error(`Error processing image ${image.src}:`, error);
+				processedCount++;
+				if (processedCount === images.length && typeof callback === "function") {
+					callback();
+				}
+			});
 	});
 };
 
-convertImages("img");
+// Usage example
+convertImages("img", () => {
+	console.log("All images have been converted to SVG.");
+});
 
 ///////////////////////////////////////
 // SWIPER
