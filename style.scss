@@ -389,6 +389,12 @@ a {
 ///////////////////////////////////////
 
 .header {
+	background-color: var(--bg);
+
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--bg-alt);
+	}
+
 	// .header-nav-wrapper
 	&-nav-wrapper {
 		position: relative;
