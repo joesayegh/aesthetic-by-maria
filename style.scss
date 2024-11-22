@@ -836,6 +836,22 @@ button.nav-toggle {
 	svg {
 		max-height: 70px;
 	}
+
+	.heliocare-light {
+		display: block;
+
+		@media (prefers-color-scheme: dark) {
+			display: none;
+		}
+	}
+
+	.heliocare-dark {
+		display: block;
+
+		@media (prefers-color-scheme: light) {
+			display: none;
+		}
+	}
 }
 
 //////////////////////////////////////////////
